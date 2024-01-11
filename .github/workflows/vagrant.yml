@@ -1,0 +1,5 @@
+name: Vagrant provision the homelab
+on:
+    push:
+        branches:
+            - "master"
