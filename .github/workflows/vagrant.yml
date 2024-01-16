@@ -11,6 +11,6 @@ jobs:
           - name: Checkout
             uses: actions/checkout@v3
           - name: list items
-            run: ls -lhrt
+            run: ls -lhrt && pwd
           - name: create kind cluster
             run: kind create cluster --config ./kindCluster/kind-example-config.yaml
