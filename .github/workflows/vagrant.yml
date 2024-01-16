@@ -10,5 +10,7 @@ jobs:
         steps:
           - name: Checkout
             uses: actions/checkout@v3
+          - name: list items
+            run: ls -lhrt
           - name: create kind cluster
             run: kind create cluster --config ./kindCluster/kind-example-config.yaml
