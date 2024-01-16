@@ -9,6 +9,6 @@ jobs:
         runs-on: self-hosted
         steps:
           - name: Checkout
-            uses: aactions/checkout@v3
+            uses: actions/checkout@v3
           - name: create kind cluster
             run: kind create cluster --config ./kindCluster/kind-example-config.yaml
