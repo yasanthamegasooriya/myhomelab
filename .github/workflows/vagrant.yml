@@ -13,4 +13,4 @@ jobs:
           - name: list items
             run: ls -lhrt && pwd
           - name: create kind cluster
-            run: kind create cluster --config ./kindCluster/kind-example-config.yaml
+            run: kind create cluster --config ./kindCluster/cluster.yaml
