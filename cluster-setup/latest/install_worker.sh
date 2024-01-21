@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Source: http://kubernetes.io/docs/getting-started-guides/kubeadm
 
