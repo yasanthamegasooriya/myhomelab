@@ -22,3 +22,6 @@ s3 = {
   name = "terraformyasanthamylab-dev"
   acl = "private"
 }
+ec2 = {
+  name= "jenkins"
+}
