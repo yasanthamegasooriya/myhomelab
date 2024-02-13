@@ -2,3 +2,5 @@
 terraform/tf.state
 terraform/.terraform
 terraform/.terraform.lock.hcl
+#ingore crash logs
+crash.log
