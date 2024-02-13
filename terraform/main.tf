@@ -4,4 +4,5 @@ module "vpc" {
   environment = var.environment
   tags = var.tags
   s3 = var.s3
+  ec2 = var.ec2
 }

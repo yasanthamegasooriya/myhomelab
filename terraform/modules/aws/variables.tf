@@ -30,3 +30,10 @@ variable "s3" {
     acl =string 
   })
 }
+
+variable "ec2" {
+  type = object({
+    name = string 
+  })
+  
+}
