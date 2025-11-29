@@ -5,14 +5,14 @@ nodes:
 - role: control-plane
   # add a mount from /path/to/my/files on the host to /files on the node
   extraMounts:
-  - hostPath: /Users/yasantha/Documents/myLearning/kindCluster/data
+  - hostPath: ${HOST_ROOT}/data
     containerPath: /files
   #
   # add an additional mount leveraging *all* of the config fields
   #
   # generally you only need the two fields above ...
   #
-  - hostPath: /Users/yasantha/Documents/myLearning/kindCluster/otherdata
+  - hostPath: ${HOST_ROOT}/otherdata
     containerPath: /other-files
     # optional: if set, the mount is read-only.
     # default false
@@ -36,14 +36,14 @@ nodes:
 - role: worker
   # add a mount from /path/to/my/files on the host to /files on the node
   extraMounts:
-  - hostPath: /Users/yasantha/Documents/myLearning/kindCluster/data
+  - hostPath: ${HOST_ROOT}/data
     containerPath: /files
   #
   # add an additional mount leveraging *all* of the config fields
   #
   # generally you only need the two fields above ...
   #
-  - hostPath: /Users/yasantha/Documents/myLearning/kindCluster/otherdata
+  - hostPath: ${HOST_ROOT}/otherdata
     containerPath: /other-files
     # optional: if set, the mount is read-only.
     # default false
